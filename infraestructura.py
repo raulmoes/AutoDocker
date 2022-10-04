@@ -2,7 +2,7 @@ import docker
 
 client = docker.from_env()
 
-
+print("Hola Raul Morales Espejo")
 def runcontainer(image):
     container = client.containers.run(image, detach=True)
     print("Container started with ID: {}".format(container.id))
